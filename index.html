@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 4th Monthsary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #fce4ec, #fff);
+      color: #333;
+      padding: 40px 20px;
+      line-height: 1.8;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      text-align: center;
+      color: #c2185b;
+      margin-bottom: 30px;
+    }
+    .letter {
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(255,255,255,0.95);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+      font-weight: 600;
+    }
+    .slideshow-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto;
+    }
+    .slideshow {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .slideshow img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: fade 1s ease-in-out;
+    }
+    @keyframes fade {
+      from {opacity: 0.4;}
+      to {opacity: 1;}
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>To my dearest Lovelove</h1>
+
+  <div class="slideshow-container">
+    <div class="slideshow">
+      <img id="slideshow-img" src="your-photo1.jpg" alt="slideshow">
+    </div>
+  </div>
+
+  <div class="letter">
+    <p>Happy 4th Monthsary! 💞</p>
+    <br>
+    <p>4 months may not seem long to others, but for me, every single day with you feels like a whole story book of smiles, kilig, kulitan, at tunay na pagmamahal. Ikaw yung taong dumating sa buhay ko nang hindi inaasahan pero ngayon, hindi ko na kayang mawala.</p>
+    <br>
+    <p>Thank you for your patience, your love, and your presence. Thank you for choosing me every single day, kahit hindi ako perfect. I may not always be the best with words, pero sana maramdaman mo sa mga actions ko na I’m always trying to be the best version of myself, for you, with you, and because of you.</p>
+    <br>
+    <p>Hindi man perfect ang lahat ng araw natin, pero isa lang ang sure ako, ikaw pa rin ang pipiliin ko. Sa lahat ng oras, sa kahit anong sitwasyon, ikaw at ikaw lang. You bring a kind of peace and joy sa akin na hindi ko maipaliwanag. Kahit simpleng message mo lang, parang gumagaan agad yung araw ko. Kahit hindi mo alam, you are already healing parts of me that I didn't even know needed healing.</p>
+    <br>
+    <p>I want you to know that I take this relationship seriously. Hindi lang ito basta-bastang “kilig-kilig lang” or panandaliang saya. What I have with you is something I genuinely value... something I want to protect, to nurture, and to grow with you.</p>
+    <br>
+    <p>You’re not just my girlfriend.<br>
+    You are my partner, my peace, my answered prayer.<br>
+    With you, love is not just a word—it’s a decision.<br>
+    A commitment.<br>
+    A promise I will continue to keep, no matter what life throws at us.</p>
+    <br>
+    <p>Thank you for making love feel safe.<br>
+    Thank you for trusting me with your heart.<br>
+    And thank you for letting me love you in ways I never thought I was capable of.</p>
+    <br>
+    <p>Happy 4th Monthsary, my love.<br>
+    Mahal na mahal kita.</p>
+
+    <p class="signature">Yours, now and always,<br>MATHEW ANGELES</p>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const images = [
+      'your-photo1.jpg',
+      'your-photo2.jpg',
+      'your-photo3.jpg',
+      'your-photo4.jpg',
+      'your-photo5.jpg',
+      'your-photo6.jpg',
+      'your-photo7.jpg',
+      'your-photo8.jpg'
+    ];
+    let current = 0;
+    const imgElement = document.getElementById('slideshow-img');
+
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      imgElement.src = images[current];
+    }, 3000);
+  </script>
+</body>
+</html>
